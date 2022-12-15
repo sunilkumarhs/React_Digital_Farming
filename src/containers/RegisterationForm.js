@@ -8,7 +8,7 @@ import Row from 'react-bootstrap/Row';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import NavBar from './NavBar';
-import Alert from 'react-bootstrap/Alert';
+// import Alert from 'react-bootstrap/Alert';
 import Card from 'react-bootstrap/Card';
 
 const RegisterationForm = () => {
@@ -63,36 +63,43 @@ const RegisterationForm = () => {
                                                       alert("Successfully Registered");
                                                       navigate('/FarmLogin');   
                                                 }else{
+                                                  alert("Check the Box to register");
                                                     document.querySelector('#check').focus();
                                                 }
                                             }else{
+                                              alert("Passwords didn't match enter correct password!!");
                                                 document.querySelector('#conpass').focus();
                                             }
                                         }else {
+                                          alert("Please the choose your account password!");
                                             document.querySelector('#pass').focus();
                                         }
                                     }else {
+                                      alert("Please enter the proper username");
                                         document.querySelector('#user').focus();
                                     }
                                 }else {
+                                  alert("Please enter the proper adhar number");
                                     document.querySelector('#adhar').focus();
                                 }
                             }else {
                                 document.querySelector('#email').focus();
                             }
                         }else {
+                          alert("please povide the valid mobile number!");
                             document.querySelector('#mobile').focus();
                         }
                     }else {
+                      alert("Please enter the proper pin code !!");
                         document.querySelector('#pin').focus();
                     }
                 }else {
                     document.querySelector('#city').focus();
                 }
             }else {
-                   <Alert variant="danger" dismissible>
-                   <Alert.Heading>Oh snap! You got an error!</Alert.Heading>
-                   </Alert>
+                  //  <Alert variant="danger" dismissible>
+                  //  <Alert.Heading>Oh snap! You got an error!</Alert.Heading>
+                  //  </Alert>
                 document.querySelector('#name').focus();
             }
             }else {
