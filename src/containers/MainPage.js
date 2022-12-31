@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-// import styles from '../css/NavBar.module.css';
-import NavBar from './NavBar';
+//import styles from '../css/NavBar.module.css';
 import FirstImage from '../Images/image1.jpg';
 import SecondImage from '../Images/image2.png';
 import ThirdImage from '../Images/image3.jpg';
 import FourthImage from '../Images/image4.png';
 import FifthImage from '../Images/image5.png';
+import NavBar from './NavBar';
 
 const MainPage = () => {
   const [index, setIndex] = useState(0);
@@ -16,9 +16,8 @@ const MainPage = () => {
   };
 
   return (
-    <div>
-        <NavBar />
-    {/* <div className='container'> */}
+    <div> 
+      <NavBar/>      
     <h1>Digital Farming</h1>
     <h5>A app for modern way of agriculture</h5>    
     <div className='section'>    
@@ -87,7 +86,6 @@ const MainPage = () => {
         </Carousel.Item>
       </Carousel>
     </div>
-    {/* </div> */}
     </div>
   )
 }

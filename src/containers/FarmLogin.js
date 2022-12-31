@@ -93,4 +93,4 @@ const FarmLogin = () => {
   );
 }
 
-export default FarmLogin
+export default FarmLogin;

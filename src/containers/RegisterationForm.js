@@ -8,7 +8,6 @@ import Row from 'react-bootstrap/Row';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import NavBar from './NavBar';
-// import Alert from 'react-bootstrap/Alert';
 import Card from 'react-bootstrap/Card';
 
 const RegisterationForm = () => {
@@ -97,9 +96,6 @@ const RegisterationForm = () => {
                     document.querySelector('#city').focus();
                 }
             }else {
-                  //  <Alert variant="danger" dismissible>
-                  //  <Alert.Heading>Oh snap! You got an error!</Alert.Heading>
-                  //  </Alert>
                 document.querySelector('#name').focus();
             }
             }else {
